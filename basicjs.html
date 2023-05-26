@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Customer{
+        custName;
+        custAge;
+        constructor(custName, custAge){
+            this.custName=custName;
+            this.custAge=custAge;
+        }
+        getCustomerInfo(){
+            console.log(`Customer Name: ${this.custName} & Customer Age: ${this.custAge}`)
+        }
+    }
+    let firstCustomer=new Customer("Harshita", 28)
+    let secondCustomer=new Customer("Ashmita", 25)
+    console.log(firstCustomer.custName, firstCustomer.custAge)
+    firstCustomer.getCustomerInfo()
+
+    console.log(secondCustomer.custName, secondCustomer.custAge)
+    secondCustomer.getCustomerInfo()
+    </script>
+</body>
+</html>

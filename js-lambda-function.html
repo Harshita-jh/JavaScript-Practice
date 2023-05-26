@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Normal function
+        let mygs = function(myVar){
+            return 20+myVar
+        }
+        console.log(mygs(30))
+        
+        //Lambda function for single parameter
+        let mylf =myVar => 20+myVar
+        console.log(mylf(30))
+
+        //Lambda function for multiple parameters
+        let mymlf =(myVar1, myVar2) =>{
+            return 20+myVar1+myVar2
+        } 
+        console.log(mymlf(30))
+    </script>
+</body>
+</html>
