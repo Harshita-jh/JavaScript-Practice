@@ -1,0 +1,37 @@
+<script>
+    class Employee{
+        name;
+        designation;
+        constructor(name, designation){
+            this.name = name;
+            this.designation = designation;
+        }
+        getInfo(){
+            console.log(`Name : ${this.name} and Designation : ${this.designation}`)
+        }
+        learn(){
+            console.log(`Employee is learning...`)
+        }
+    }
+    class Programmer extends Employee{
+        employer;
+        constructor(name, designation, employer){
+            super(name, designation)
+            this.employer = employer
+        }
+        getInfo(){
+            console.log(`Name : ${this.name} , Designation : ${this.designation} and Employer Name : ${this.employer}`)
+        }
+        parentGetInfo(){
+            super.getInfo()
+        }
+        coding(){
+            console.log('Programmer special method')
+        }
+    }
+    let prog = new Programmer("Harshita", "SSE", "ABC");
+    prog.coding()
+    prog.learn()
+    prog.getInfo()
+    prog.parentGetInfo()
+</script>

@@ -1,0 +1,23 @@
+<script>
+    class Employee{
+        constructor(){
+            this.employer = "ABC"
+        }
+        printEmployer(){
+            console.log(this.employer)
+        }
+    }
+    class Programmer extends Employee{
+        constructor(){
+            super()
+            this.name = "Harshita"
+            this.employer = "XYZ"
+        }
+        printMyName(){
+            console.log(this.name)
+        }
+     }
+    let prog = new Programmer();
+    prog.printEmployer()
+    prog.printMyName()
+</script>

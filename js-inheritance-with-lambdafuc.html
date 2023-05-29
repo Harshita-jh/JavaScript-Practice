@@ -1,0 +1,21 @@
+<script>
+    class Employee{
+        employer = "ABC"
+        printEmployer = () => {
+            console.log(this.employer)
+        }
+        
+    }
+    class Programmer extends Employee{
+       
+            name = "Harshita"
+            employer = "XYZ"
+        
+        printMyName = () => {
+            console.log(this.name)
+        }
+     }
+    let prog = new Programmer();
+    prog.printEmployer()
+    prog.printMyName()
+</script>
