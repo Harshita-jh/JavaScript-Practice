@@ -19,10 +19,31 @@
         console.log(mylf(30))
 
         //Lambda function for multiple parameters
-        let mymlf =(myVar1, myVar2) =>{
-            return 20+myVar1+myVar2
-        } 
-        console.log(mymlf(30))
+        // let mymlf =(myVar1, myVar2) =>{
+        //     return 20+myVar1+myVar2
+        // } 
+        // console.log(mymlf(30))
+
+        // write like this also for 2 parameter
+        // let sum2 = (a, b) => {
+        //     return a+b;
+        // }
+
+        //like this also we can write lambda function
+        // let sum2 = (a, b) => a+b;
+
+        //Lexical This concept
+        let obj1={
+        greeting: "Good Morning",
+        names: ["Harshita", "Rohan", "ABC", "XYZ"],
+        speak(){
+            this.names.forEach((student)=>{
+                console.log(this.greeting + " Everyone " + student);
+            });
+        }
+    }
+    obj1.speak();
+
     </script>
 </body>
 </html>
